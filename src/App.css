@@ -1,0 +1,35 @@
+.w-spinner-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-spinner {
+  height: 25px;
+  width: 25px;
+  border: solid 5px #777777;
+  border-radius: 50%;
+  animation: spinner 5s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: scale(1);
+    border-color: #ef5350;
+  }
+
+  25% {
+    border-color: #039be5;
+  }
+
+  50% {
+    transform: scale(1.4);
+    border-color: #43a047;
+  }
+  75% {
+    border-color: #ffb74d;
+  }
+}
